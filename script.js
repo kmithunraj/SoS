@@ -238,6 +238,7 @@ search_button.addEventListener('click', function() {
     document.getElementById('help_button').style.display = 'none';
     document.getElementById('search_container').style.display = 'block';
     document.getElementById('location_button').style.display = 'block';
+    document.getElementById('chat_container').style.display = 'none';
 });
 
 let home_button = document.getElementById('home');
@@ -246,5 +247,14 @@ home_button.addEventListener('click', function() {
     document.getElementById('help_button').style.display = 'block';
     document.getElementById('search_container').style.display = 'none';
     document.getElementById('location_button').style.display = 'none';
+    document.getElementById('chat_container').style.display = 'none';
+});
 
+let help_button = document.getElementById('help');
+help_button.addEventListener('click', function() {
+    document.getElementById('chat_container').style.display = 'block';
+    document.getElementById('sos_container').style.display = 'none';
+    document.getElementById('help_button').style.display = 'none';
+    document.getElementById('search_container').style.display = 'none';
+    document.getElementById('location_button').style.display = 'none';
 });
